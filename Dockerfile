@@ -10,7 +10,8 @@ RUN unzip energy.zip
 
 RUN cp -rvf  energy/* .
 RUN rm -rf  *.zip
+
 #CMD ["/usr/sbin/nginx", "D" ,"FOREGROUND"]
 EXPOSE 80
-   
+RUN service nginx restart    
     
